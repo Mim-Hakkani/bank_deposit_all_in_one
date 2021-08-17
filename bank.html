@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page personal</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <h1 class="text-center text-5xl mt-16 font-bold">WelCome To My <span class="text-green-500 animate-pulse">Personal Bank</span> </h1>
+
+<!-- bank-basic-style -->
+    <div class="grid grid-cols-3 gap-4 mx-auto w-3/4 text-center mt-20">
+        <div class="deposite bg-green-200 py-14  text-white">
+            <h1 class = "text-5xl mb-4">Deposite</h1>
+            <h2 class="text-4xl">$<span id="depo-main">00</span> </h2>
+        </div>
+
+        <div class="Withdraw bg-red-200 py-14 text-white ">
+            <h1 class = "text-5xl mb-4">Withdraw</h1>
+            <h2 class="text-4xl">$<span id="withdraw-main">00</span></h2>
+        </div>
+
+        <div class="balance bg-blue-200 py-14 text-white">
+            <h1 class = "text-5xl mb-4">Balance</h1>
+            <h2 class="text-4xl" >$<span id="b-id">1000</span></h2>
+        </div>
+    </div>
+
+    <!-- deposite and withdraw from -->
+    <div class="grid grid-cols-2 gap-4 mx-auto w-3/4  mt-10">
+   
+
+
+
+        <div class="depo-form bg-yellow-100 p-10">
+            <h2 class="text-4xl font-medium mb-3">Please Deposite</h2>
+            <input type="text" placeholder="$ amount to depo" id="depo-input" class="p-4 w-3/4 border rounded"><br/>
+            <button id="depo-submit" class="py-3 px-7 bg-blue-500 mt-2 font-medium text-white ">Submit</button>
+        </div>
+
+
+
+        <div class="withdraw-form bg-purple-100 p-10">
+            <h2 class="text-4xl font-medium mb-3">Withdraw Amount</h2>
+            <input type="text" placeholder="$ total withdraw" id="withdraw-input" class="p-4 w-3/4 border rounded"><br/>
+            <button id="withdraw-submit" class="py-3 px-7 bg-blue-500 mt-2 font-medium text-white ">Submit</button>
+        </div>
+    </div>
+
+
+     <script src="banking.js"></script>
+
+    
+</body>
+</html>
